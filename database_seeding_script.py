@@ -2,6 +2,14 @@ import firebase_admin
 from firebase_admin import auth, credentials, firestore, initialize_app
 from dummy_data import *
 
+"""
+This is the Database Seeding Script for jobpAIr. 
+It includes functions to add jobs, seekers, recruiters, and admins to the database. 
+Additionally, it provides methods to delete seekers and applied jobs, delete recruiters 
+and their chat sub-collection, and delete all documents from the jobs and admins collections. 
+The script interacts with the Firebase Admin SDK to perform database operations.
+"""
+
 cred = credentials.Certificate("jobpair-305bf-firebase-adminsdk-z1lyx-2330215fb7.json")
 firebase_admin.initialize_app(cred)
 
